@@ -16,6 +16,15 @@ namespace EmployeeAccess.Controllers
         public string message = "";
         public static string env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
+        /// <summary>
+        ///
+        /// </summary>
+        /// <remarks>
+        /// Copies Data from Source Database to Target Database.
+        ///     
+        /// </remarks>
+        /// <param name="CopyData"></param>
+        /// <returns></returns>
         [HttpPost("Save")]
         public IActionResult Save([FromBody] CopyData CopyData)
         {
